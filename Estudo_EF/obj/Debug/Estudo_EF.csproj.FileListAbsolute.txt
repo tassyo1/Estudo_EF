@@ -1,1 +1,12 @@
 f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\bin\Debug\Estudo_EF.exe.config
+f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\bin\Debug\Loja.mdf
+f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\bin\Debug\Loja_log.ldf
+f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\bin\Debug\Estudo_EF.exe
+f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\bin\Debug\Estudo_EF.pdb
+f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\bin\Debug\EntityFramework.dll
+f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\bin\Debug\EntityFramework.SqlServer.dll
+f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\bin\Debug\EntityFramework.xml
+f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\bin\Debug\EntityFramework.SqlServer.xml
+f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\obj\Debug\Estudo_EF.csprojResolveAssemblyReference.cache
+f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\obj\Debug\Estudo_EF.exe
+f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\obj\Debug\Estudo_EF.pdb
