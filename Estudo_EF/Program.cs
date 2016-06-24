@@ -1,4 +1,5 @@
-﻿using Estudo_EF.Entidades;
+﻿using Estudo_EF.DAO;
+using Estudo_EF.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,14 +12,18 @@ namespace Estudo_EF
     {
         static void Main(string[] args)
         {
-            EntidadesContext contexto = new EntidadesContext();
-            contexto.Database.CreateIfNotExists();
+            /* Usuario usuario = new Usuario() { Nome = "Neuber", Senha = "654" };
 
-            Usuario usuario = new Usuario() { Nome = "Tássyo", Senha = "123" };
-            contexto.Usuarios.Add(usuario);
+             UsuarioDAO dao = new UsuarioDAO();
+             dao.Adiciona(usuario);*/
 
-            contexto.SaveChanges();
-            contexto.Dispose();
+            UsuarioDAO dao = new UsuarioDAO();
+            foreach (var usuario in dao.ListaUsuario())
+            {
+                Console.WriteLine(usuario.Nome);
+            }
+
+            Console.ReadKey();
         }
     }
 }
