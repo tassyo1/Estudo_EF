@@ -14,20 +14,13 @@ namespace Estudo_EF
         {
 
             EntidadesContext contexto = new EntidadesContext();
-            Categoria c = new Categoria()
-            {
-                Nome = "informática"
-            };
 
-            Produto p = new Produto()
+            Categoria c = contexto.Categorias.Find(1);
+            foreach (var produto in c.Produtos)
             {
-                Nome = "computador",
-                Categoria = c,
-                Preco = 1000
-            };
-            contexto.Categorias.Add(c);
-            contexto.Produtos.Add(p);
-            contexto.SaveChanges();
+                Console.WriteLine(produto.Nome);
+            }
+            
 
             contexto.Dispose();
             Console.WriteLine("Sucesso");
