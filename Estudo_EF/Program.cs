@@ -15,13 +15,12 @@ namespace Estudo_EF
 
             EntidadesContext contexto = new EntidadesContext();
 
-            Categoria c = contexto.Categorias.Find(1);
-            foreach (var produto in c.Produtos)
-            {
-                Console.WriteLine(produto.Nome);
-            }
-            
+            var busca = from p in contexto.Produtos select p;
 
+            foreach (var p in busca)
+            {
+                Console.WriteLine(p.Nome);
+            }
             contexto.Dispose();
             Console.WriteLine("Sucesso");
 
