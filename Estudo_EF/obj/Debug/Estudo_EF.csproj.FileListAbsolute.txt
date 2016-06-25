@@ -13,3 +13,4 @@ f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\obj\Debug\Estudo_E
 f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\obj\Debug\Estudo_EF.Migrations.InitialCreate.resources
 f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\obj\Debug\Estudo_EF.csproj.GenerateResource.Cache
 f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\obj\Debug\Estudo_EF.Migrations.CreateProduto.resources
+f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\obj\Debug\Estudo_EF.Migrations.CriaCategoria.resources

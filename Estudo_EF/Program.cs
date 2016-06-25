@@ -12,16 +12,25 @@ namespace Estudo_EF
     {
         static void Main(string[] args)
         {
-            /* Usuario usuario = new Usuario() { Nome = "Neuber", Senha = "654" };
 
-             UsuarioDAO dao = new UsuarioDAO();
-             dao.Adiciona(usuario);*/
-
-            UsuarioDAO dao = new UsuarioDAO();
-            foreach (var usuario in dao.ListaUsuario())
+            EntidadesContext contexto = new EntidadesContext();
+            Categoria c = new Categoria()
             {
-                Console.WriteLine(usuario.Nome);
-            }
+                Nome = "informática"
+            };
+
+            Produto p = new Produto()
+            {
+                Nome = "computador",
+                Categoria = c,
+                Preco = 1000
+            };
+            contexto.Categorias.Add(c);
+            contexto.Produtos.Add(p);
+            contexto.SaveChanges();
+
+            contexto.Dispose();
+            Console.WriteLine("Sucesso");
 
             Console.ReadKey();
         }
