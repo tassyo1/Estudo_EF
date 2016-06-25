@@ -69,7 +69,17 @@
   <ItemGroup>
     <Compile Include="DAO\UsuarioDAO.cs" />
     <Compile Include="EntidadesContext.cs" />
+    <Compile Include="Entidades\Produto.cs" />
     <Compile Include="Entidades\Usuario.cs" />
+    <Compile Include="Migrations\201606242119137_InitialCreate.cs" />
+    <Compile Include="Migrations\201606242119137_InitialCreate.Designer.cs">
+      <DependentUpon>201606242119137_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606250232060_CreateProduto.cs" />
+    <Compile Include="Migrations\201606250232060_CreateProduto.Designer.cs">
+      <DependentUpon>201606250232060_CreateProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -97,6 +107,14 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Loja.mdf</DependentUpon>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201606242119137_InitialCreate.resx">
+      <DependentUpon>201606242119137_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606250232060_CreateProduto.resx">
+      <DependentUpon>201606250232060_CreateProduto.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
