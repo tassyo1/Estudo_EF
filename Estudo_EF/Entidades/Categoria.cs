@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace Estudo_EF.Entidades
 {
-    [Table("Usuarios")]
-    public class Usuario
+    [Table("Categorias")]
+    public class Categoria
     {
         public int ID { get; set; }
         public string Nome { get; set; }
-        public string Senha { get; set; }
     }
 }
