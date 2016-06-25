@@ -15,9 +15,13 @@ namespace Estudo_EF
 
             EntidadesContext contexto = new EntidadesContext();
 
-            var busca = from p in contexto.Produtos select p;
+            decimal precoMinimo = 200;
 
-            foreach (var p in busca)
+            var busca = from p in contexto.Produtos
+                        where p.Categoria.Nome =="roupas" && p.Preco > 50
+                        orderby p.Nome select p;
+            IList<Produto> lista = busca.ToList();
+            foreach (var p in lista)
             {
                 Console.WriteLine(p.Nome);
             }
