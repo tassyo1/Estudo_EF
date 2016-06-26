@@ -101,6 +101,10 @@
     <Compile Include="Migrations\201606261522204_TabelaUnica.Designer.cs">
       <DependentUpon>201606261522204_TabelaUnica.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606261532264_MigraDados.cs" />
+    <Compile Include="Migrations\201606261532264_MigraDados.Designer.cs">
+      <DependentUpon>201606261532264_MigraDados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ProdutosPorCategoria.cs" />
     <Compile Include="Program.cs" />
@@ -149,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606261522204_TabelaUnica.resx">
       <DependentUpon>201606261522204_TabelaUnica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606261532264_MigraDados.resx">
+      <DependentUpon>201606261532264_MigraDados.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
