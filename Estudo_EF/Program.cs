@@ -14,20 +14,24 @@ namespace Estudo_EF
         {
 
             EntidadesContext contexto = new EntidadesContext();
-            Produto p1 =contexto.Produtos.Find(1);
-            Produto p2 = contexto.Produtos.Find(2);
+            PessoaFisica victor = new PessoaFisica()
+            {
+                Nome = "Victor",
+                CPF = "123"
 
-            Usuario cliente = contexto.Usuarios.Find(3);
+            };
 
-            Venda venda = new Venda();
-            venda.Cliente = cliente;
-            venda.Produtos.Add(p1);
-            venda.Produtos.Add(p2);
+            PessoaJuridica caelum = new PessoaJuridica()
+            {
+                Nome="Caelum",
+                CNPJ="23456"
+            };
 
-            contexto.Vendas.Add(venda);
+            contexto.Usuarios.Add(victor);
+            contexto.Usuarios.Add(caelum);
+
             contexto.SaveChanges();
-
-            Console.WriteLine("Venda adicionada");
+            
             contexto.Dispose();
             
 

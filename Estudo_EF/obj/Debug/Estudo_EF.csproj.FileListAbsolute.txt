@@ -16,3 +16,4 @@ f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\obj\Debug\Estudo_E
 f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\obj\Debug\Estudo_EF.Migrations.Contexto.resources
 f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\obj\Debug\Estudo_EF.csprojResolveAssemblyReference.cache
 f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\obj\Debug\Estudo_EF.Migrations.CriaVenda.resources
+f:\documentos\visual studio 2015\Projects\Estudo_EF\Estudo_EF\obj\Debug\Estudo_EF.Migrations.TabelaUnica.resources
