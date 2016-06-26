@@ -14,11 +14,21 @@ namespace Estudo_EF
         {
 
             EntidadesContext contexto = new EntidadesContext();
-            foreach (var u in contexto.Usuarios)
+            PessoaFisica paulo = new PessoaFisica()
             {
-                Console.WriteLine(u.ID + "-" + u.Nome);
-            }
-            
+                Nome = "Paulo",
+                CPF = "123"
+            };
+            PessoaJuridica caelum = new PessoaJuridica()
+            {
+                Nome = "DevMedia",
+                CNPJ = "5454"
+
+            };
+            contexto.Usuarios.Add(paulo);
+            contexto.Usuarios.Add(caelum);
+            contexto.SaveChanges();
+            Console.WriteLine("Usuários Atualizados");
             contexto.Dispose();  
             
 

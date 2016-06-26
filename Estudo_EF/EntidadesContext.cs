@@ -33,6 +33,9 @@ namespace Estudo_EF
                     relacionamento.MapLeftKey("VendaID");   //mapeando foreign key de venda
                     relacionamento.MapRightKey("ProdutoID"); // mapeando foreign key de produto
                 });
+
+            modelBuilder.Entity<PessoaFisica>().ToTable("PessoaFisica");
+            modelBuilder.Entity<PessoaJuridica>().ToTable("PessoaJuridica");
         }
 
     }

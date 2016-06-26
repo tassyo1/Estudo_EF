@@ -7,13 +7,13 @@ namespace Estudo_EF.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class TabelaUnica : IMigrationMetadata
+    public sealed partial class InseriFKVendas : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(TabelaUnica));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InseriFKVendas));
         
         string IMigrationMetadata.Id
         {
-            get { return "201606261522204_TabelaUnica"; }
+            get { return "201606261845303_InseriFKVendas"; }
         }
         
         string IMigrationMetadata.Source

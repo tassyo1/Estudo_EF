@@ -7,13 +7,13 @@ namespace Estudo_EF.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class MigraDados : IMigrationMetadata
+    public sealed partial class DropFKVendaUsuario : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(MigraDados));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(DropFKVendaUsuario));
         
         string IMigrationMetadata.Id
         {
-            get { return "201606261532264_MigraDados"; }
+            get { return "201606261832575_DropFKVendaUsuario"; }
         }
         
         string IMigrationMetadata.Source

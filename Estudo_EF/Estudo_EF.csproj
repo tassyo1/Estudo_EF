@@ -97,13 +97,17 @@
     <Compile Include="Migrations\201606261450255_CriaVenda.Designer.cs">
       <DependentUpon>201606261450255_CriaVenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201606261522204_TabelaUnica.cs" />
-    <Compile Include="Migrations\201606261522204_TabelaUnica.Designer.cs">
-      <DependentUpon>201606261522204_TabelaUnica.cs</DependentUpon>
+    <Compile Include="Migrations\201606261832575_DropFKVendaUsuario.cs" />
+    <Compile Include="Migrations\201606261832575_DropFKVendaUsuario.Designer.cs">
+      <DependentUpon>201606261832575_DropFKVendaUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201606261532264_MigraDados.cs" />
-    <Compile Include="Migrations\201606261532264_MigraDados.Designer.cs">
-      <DependentUpon>201606261532264_MigraDados.cs</DependentUpon>
+    <Compile Include="Migrations\201606261835283_UmaTabelaPorClasse.cs" />
+    <Compile Include="Migrations\201606261835283_UmaTabelaPorClasse.Designer.cs">
+      <DependentUpon>201606261835283_UmaTabelaPorClasse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606261845303_InseriFKVendas.cs" />
+    <Compile Include="Migrations\201606261845303_InseriFKVendas.Designer.cs">
+      <DependentUpon>201606261845303_InseriFKVendas.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ProdutosPorCategoria.cs" />
@@ -151,11 +155,14 @@
     <EmbeddedResource Include="Migrations\201606261450255_CriaVenda.resx">
       <DependentUpon>201606261450255_CriaVenda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606261522204_TabelaUnica.resx">
-      <DependentUpon>201606261522204_TabelaUnica.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201606261832575_DropFKVendaUsuario.resx">
+      <DependentUpon>201606261832575_DropFKVendaUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606261532264_MigraDados.resx">
-      <DependentUpon>201606261532264_MigraDados.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201606261835283_UmaTabelaPorClasse.resx">
+      <DependentUpon>201606261835283_UmaTabelaPorClasse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606261845303_InseriFKVendas.resx">
+      <DependentUpon>201606261845303_InseriFKVendas.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

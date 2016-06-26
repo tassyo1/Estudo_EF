@@ -3,15 +3,16 @@ namespace Estudo_EF.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class MigraDados : DbMigration
+    public partial class DropFKVendaUsuario : DbMigration
     {
         public override void Up()
         {
-            Sql("update Usuarios set Discriminator = 'PessoaFisica' where Discriminator=''");
+            DropForeignKey("dbo.Vendas", "ClienteID", "dbo.Usuarios");
         }
         
         public override void Down()
         {
+            
         }
     }
 }
