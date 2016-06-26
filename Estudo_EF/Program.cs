@@ -14,16 +14,22 @@ namespace Estudo_EF
         {
 
             EntidadesContext contexto = new EntidadesContext();
-            ProdutoDAO produtoDAO = new ProdutoDAO();
-            var resultado = produtoDAO.BuscaPorNomePrecoCategoria("", 50, "informática");
+            Produto p1 =contexto.Produtos.Find(1);
+            Produto p2 = contexto.Produtos.Find(2);
 
-            foreach (var r in resultado)
-            {
-                Console.WriteLine(r.Nome);
-            }
-            
+            Usuario cliente = contexto.Usuarios.Find(3);
+
+            Venda venda = new Venda();
+            venda.Cliente = cliente;
+            venda.Produtos.Add(p1);
+            venda.Produtos.Add(p2);
+
+            contexto.Vendas.Add(venda);
+            contexto.SaveChanges();
+
+            Console.WriteLine("Venda adicionada");
             contexto.Dispose();
-            Console.WriteLine("Sucesso");
+            
 
             Console.ReadKey();
         }
