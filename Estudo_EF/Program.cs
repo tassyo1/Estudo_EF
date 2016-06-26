@@ -17,13 +17,13 @@ namespace Estudo_EF
 
             decimal precoMinimo = 200;
 
-            var busca = from p in contexto.Produtos
-                        where p.Categoria.Nome =="roupas" && p.Preco > 50
-                        orderby p.Nome select p;
-            IList<Produto> lista = busca.ToList();
-            foreach (var p in lista)
+            var busca = from c in contexto.Categorias
+                        select new ProdutosPorCategoria { Categoria = c, NumeroDeProdutos= c.Produtos.Count };
+
+            IList<ProdutosPorCategoria> resultado = busca.ToList();
+            foreach (var r in resultado)
             {
-                Console.WriteLine(p.Nome);
+                Console.WriteLine(r.Categoria.Nome+" - "+r.NumeroDeProdutos);
             }
             contexto.Dispose();
             Console.WriteLine("Sucesso");
