@@ -47,20 +47,20 @@ namespace Estudo_EF.DAO
                         where p.Nome == nome && p.Preco > precoMinimo
                         && p.Categoria.Nome == nomeCategoria
                         select p; */
-            var busca = from p in contexto.Produtos select p;
+            var busca = contexto.Produtos.AsQueryable() ;
             if (!string.IsNullOrEmpty(nome))
             {
-                busca = from p in busca where p.Nome == nome select p;
+                busca = busca.Where(p => p.Nome == nome) ;
             }
 
             if (precoMinimo > 0)
             {
-                busca = from p in busca where p.Preco > precoMinimo select p;
+                busca = busca.Where(p => p.Preco > precoMinimo);
             }
 
             if (!string.IsNullOrEmpty(nomeCategoria))
             {
-                busca = from p in busca where p.Categoria.Nome == nomeCategoria select p;
+                busca = busca.Where(p => p.Categoria.Nome == nomeCategoria);
             }
 
             return busca.ToList(); 
