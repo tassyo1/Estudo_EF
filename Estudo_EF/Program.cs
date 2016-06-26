@@ -14,17 +14,14 @@ namespace Estudo_EF
         {
 
             EntidadesContext contexto = new EntidadesContext();
+            ProdutoDAO produtoDAO = new ProdutoDAO();
+            var resultado = produtoDAO.BuscaPorNomePrecoCategoria("", 50, "informática");
 
-            decimal precoMinimo = 200;
-
-            var busca = from c in contexto.Categorias
-                        select new ProdutosPorCategoria { Categoria = c, NumeroDeProdutos= c.Produtos.Count };
-
-            IList<ProdutosPorCategoria> resultado = busca.ToList();
             foreach (var r in resultado)
             {
-                Console.WriteLine(r.Categoria.Nome+" - "+r.NumeroDeProdutos);
+                Console.WriteLine(r.Nome);
             }
+            
             contexto.Dispose();
             Console.WriteLine("Sucesso");
 
